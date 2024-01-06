@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background-color: rgb(176, 78, 211); */
+    background: url(space.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn{
+    position: relative;
+    padding: 13px;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 4px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: 0.1rem;
+}
+
+.outer{
+    padding: 80px 50px 50px;
+    background-color: white;
+    width: 450px;
+    position: fixed;
+    border-radius: 4px;
+    transition: 0.5s;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    box-shadow: 1px 1px 10px black;
+}
+
+.outer i{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.outer.active{
+    visibility: visible;
+    top: 50%;
+}
+
+.outer h2{
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.outer p{
+    text-align: center;
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+input, button{
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 15px;
+}
+
+button{
+    border: none;
+    width: 150px;
+    background-color: rgb(169, 85, 247);
+    border-radius: 4px;
+    cursor : pointer;
+    letter-spacing: 0.1rem;
+    color: white;
+}
